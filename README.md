@@ -20,3 +20,5 @@ In addition i added some optional modules:
      - Enables or not autoscaling based on average CPU tracking
      - Target average CPU percentage to track for autoscaling
  - A Hostname to create DNS record for this app.
+
+ please feel free to reach out to me for any question thank you. ...
