@@ -1,5 +1,5 @@
 variable "name" {
-  description = "nodebackend"
+  description = "Name of your ECS service"
 }
 
 variable "memory" {
@@ -26,7 +26,7 @@ variable "task_role_arn" {
 
 variable "image" {
   description = "Docker image to deploy (can be a placeholder)"
-  default     = "dnxsolutions/nginx-hello:latest"
+  default     = "nodebackend/:latest"
 }
 
 variable "vpc_id" {

@@ -10,29 +10,13 @@ The following resources will be created:
  - Security Groups for the ECS nodes
  - Simple Notification Service (SNS) topics - Alarm topics to create and alert on ECS service metrics. Leaving empty disables all alarms.
  - Auto Scaling
-    - You can specify the max number of containers to scale with autoscaling. The default is 4
-    - You can specify the nin number of containers to scale with autoscaling. The default is 1
-    - Cooldown in seconds to wait between scale in events. The default is 300
-    - Cooldown in seconds to wait between scale out events. The default is 300
  - Cloudwatch Log Groups
  - Network Load Balancer (NLB)
- - ECS task definition - A task definition is required to run Docker containers in Amazon ECS. Some of the parameters you can specify in a task definition include:
-      - Image - Docker image to deploy
-           - Default value = "dnxsolutions/nginx-hello:latest"
-      - CPU - Hard limit of the CPU for the container
-           -  Default Value = 0
-      - Memory - Hard memory of the container
-           -  Default Value = 512
-      - Name - Name of the ECS Service
-      - Set log configuration
-
+ - ECS task definition - A task definition is required to run Docker containers in Amazon ECS.
  - ECS Task-scheduler activated by cloudwatch events
 
-In addition you have the option to create or not :
+In addition i added some optional modules:
  - Autoscaling
      - Enables or not autoscaling based on average CPU tracking
      - Target average CPU percentage to track for autoscaling
- - A Hostname to create DNS record for this app
-
-
-# infra-test
+ - A Hostname to create DNS record for this app.
