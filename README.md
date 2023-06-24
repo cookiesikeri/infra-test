@@ -21,4 +21,10 @@ In addition i added some optional modules:
      - Target average CPU percentage to track for autoscaling
  - A Hostname to create DNS record for this app.
 
+
+how to spin up infra:
+1. terraform init (to initialize terraform)
+2. terraform plan: to see the resources that are going to be provisioned (or changed)
+3. terraform apply:  to deploy them
+
  please feel free to reach out to me for any question thank you. ...
